@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'sans-serif';
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+.yehadzah a {
+    color: red;
+}
+
+/* the slideshow style 
+************************************ */
+.slideshow-container {
+    max-width: 1000px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    background-color: #292c2f;
+
+}
+
+.mySlides {
+    display: none;
+    height: 400px;
+}
+
+.mySlides img {
+    height: 400px;
+}
+
+.prev,
+.next {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: red;
+    background-color: #292c2f;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .6s ease;
+    border-radius: 100%;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    color: red;
+    background-color: #292c2f;
+}
+
+.divtxt {
+    position: absolute;
+    font-family: lucida;
+    height: 100px;
+    margin: 10px;
+    width: auto;
+}
+
+.text {
+    color: white;
+    font-size: 25px;
+    font-family: lucida;
+    align-content: center;
+    padding-left: 10%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 200px;
+    width: 80%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    bottom: 50px;
+    margin: 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.dot:hover {
+    background-color: #292c2f;
+
+}
+
+/* Section one style
+************************************ */
+.spanhr {
+    margin-top: 10px;
+    margin-bottom: 5;
+    margin-right: 200px;
+    margin-left: 10px;
+}
+
+hr {
+    background-color: solid 1px red;
+    z-index: 20;
+    margin-top: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.gridd-show-two {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media (min-width: 650px) {
+    .grid-show-two {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .gridd-show-two {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    }
+}
+
+.yartrend {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    /* margin-bottom: 5vh; */
+    align-items: center;
+    padding: 0;
+}
+
+.yartrend a {
+    display: block;
+    margin-top: 10px;
+}
+
+.yartrend figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.yartrend img {
+    width: 20vh;
+    height: 20vh;
+    margin-top: 0;
+    padding: 0;
+}
+
+.yartrend h2 {
+    height: 20vh;
+    font-size: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+@media(min-width: 720px) {
+    .yartrend {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .yartrend img {
+        width: 35vh;
+        height: 35vh;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .yartrend h2 {
+        font-size: 5vh;
+    }
+
+    .spanhr {
+        margin-top: 30px;
+    }
+}
